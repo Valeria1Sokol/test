@@ -6,15 +6,20 @@
     <title>Document</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="ScrollMagic.js"></script>
 </head>
 
 <body>
-
+    <div class="container_box">
+        <h1 class="h1">Scroll down</h1>
+    </div>
     <div class="container">
-        <div class="container_box">
-            <h1 class="h1">Scroll down</h1>
-        </div>
+        <!--
+        
+-->
         <h2 class="h2">connect to everything</h2>
         <h1 class="h1">connect to everything</h1>
         <p class="p">Download GlobeKeeper onto the devices you already have. Connect to smart equipment for a hands-free experience.</p>
@@ -37,13 +42,29 @@
             </div>
             <p class="p">runs on any platform</p>
         </footer>
-        <div class="container_box">
-            <h1 class="h1">Scroll up</h1>
-        </div>
+        <!--
+       
+-->
     </div>
-
+    <div class="container_box1">
+        <h1 class="h1">Scroll up</h1>
+    </div>
     <script>
         AOS.init();
+
+    </script>
+    <script>
+        var controller = new ScrollMagic.Controller();
+
+        // create a scene
+        new ScrollMagic.Scene({
+                duration: 100, // the scene should last for a scroll distance of 100px
+                offset: 50 // start this scene after scrolling for 50px
+            })
+            .setPin('.desctop') // pins the element for the the scene's duration
+            .addTo(controller); // assign the scene to the controller
+        
+        
 
     </script>
 
