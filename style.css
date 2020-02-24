@@ -17,6 +17,9 @@ body {
 [data-aos=zoom-out-up] {
     transform: translate3d(0, 75%, 0) scale(2.6);
 }
+[data-aos=fade-up] {
+    transform: translate3d(0,0,0);
+}
 
 .container {
     width: 100vw;
@@ -106,11 +109,13 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 2% 0 0;
+/*
     -webkit-animation-name: fadeIn 1.5s ease-in-out 1s;
     animation: fadeIn 1.5s ease-in-out 1s;
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: both;
+*/
 
 }
 
