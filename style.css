@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(10, 13, 29, 8%);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+[data-aos=zoom-out] {
+    transform: scale(2.4);
+}
+
+[data-aos=zoom-out-up] {
+    transform: translate3d(0, 175px, 0) scale(2.6);
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.container .h2 {
+    color: #09c4c4;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container .h1 {
+    color: black;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.2;
+    margin: 0.5vw 0 1vw;
+}
+
+.container .p {
+    color: black;
+    font-size: 0.8vw;
+    font-weight: 300;
+    width: 30%;
+}
+
+.img_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vw 0 0;
+    position: relative;
+}
+
+.img_box .desctop {
+    width: 31%;
+    height: 25vw;
+    background-image: url(macbook_PNG55.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img_box .other {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: -17% 0 0;
+}
+
+.img_box .other .table {
+    width: 37%;
+    height: 17vw;
+    background-image: url(01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 6% 0 0;
+}
+
+.img_box .other .mobile {
+    width: 19%;
+    height: 21vw;
+    background-image: url(02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 8% 0 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0 0;
+    -webkit-animation-name: fadeIn 1.5s ease-in-out 1s;
+    animation: fadeIn 1.5s ease-in-out 1s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+footer .p {
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.9vw;
+    text-align: center;
+}
+
+footer img {
+    max-width: 4vw;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
